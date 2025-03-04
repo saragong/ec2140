@@ -65,8 +65,8 @@ perform_hypothesis_tests <- function(df) {
           F_hat <- matrix(
             c(
               1/c3_hat,
-              1/(1-c3_hat),
-              -(c1_hat/(c3_hat^2))+(c2_hat/(1-c3_hat)^2)
+              -1/(1-c3_hat),
+              -(c1_hat/(c3_hat^2))-(c2_hat/(1-c3_hat)^2)
             ),
             ncol=1)
           
